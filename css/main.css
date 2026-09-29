@@ -1,64 +1,65 @@
-body {
-    background-color: #f2eadf;
-    color: #2f2a26;
-    font-family: Arial, serif;
-    line-height: 1.6;
+{
     margin: 0 auto;
-    max-width: 900px;
-    padding: 2rem;
+    padding: 0 auto;
 }
 
-h1,
-h2 {
-    color: #7a3e24;
-    font-family: Georgia, serif;
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #EFEFEF;
+  font-size: 32px;
 }
 
-h1 {
-    border-bottom: 3px solid #c47f52;
-    font-size: 2.5rem;
-    padding-bottom: 0.5rem;
+#container1 {
+    display:grid ;
+    border 1px solid red;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
 }
 
-h2 {
-    font-size: 1.7rem;
-    margin-top: 2rem;
+#container1 .Titulo1 {
+    grid-column: 1/3;
+    padding: 9px;
+    background-color: blanchedalmond;
+    border-radius: 18px;
 }
 
-p {
-    font-size: 1.05rem;
-    margin: 1rem 0;
+#container1 .Postitulo {
+    grid-column: 2/1;
+    padding: 9px;
+    background-color: blanchedalmond;
+    border-radius: 18px;
 }
 
-ol,
-ul {
-    background-color: #fffaf5;
-    border-left: 4px solid #c47f52;
-    border-radius: 0.25rem;
-    padding: 1rem 1rem 1rem 2.5rem;
+#container1 .Lista1 {
+    grid-column: 2/2;
+    padding: 9px;
+    background-color: blanchedalmond;
+    border-radius: 18px;
 }
 
-li {
-    margin: 0.35rem 0;
+
+#container1 .Lista2 {
+    grid-column: 2/3;
+    padding: 9px;
+    background-color: blanchedalmond;
+    border-radius: 18px;
 }
 
-img {
-    border: 4px solid #fffaf5;
-    border-radius: 0.75rem;
-    display: block;
-    height: auto;
-    margin: 1.5rem 0;
-    max-width: 100%;
-    width: 420px;
+#container1 .Texto1 {
+    grid-column: 1/2;
+    padding: 9px;
+    background-color: blanchedalmond;
+    border-radius: 18px;
 }
 
-a {
-    color: #176b87;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #a54527;
-    text-decoration: underline;
+#container1 .introcancion,
+#container1 .Titulo3,
+#container1 .Audio1 {
+  grid-column: 1 / 3;
+  padding: 9px;
+  background-color: blanchedalmond;
+  border-radius: 5px;
 }
